@@ -1,0 +1,13 @@
+<section class="world d-flex">
+    <div class="container text-center my-auto black">
+        <h1 class="mb-1">Countries of the World</h1>
+        <h3 class="mb-5">
+            <em>A little project of <a href="mailto:micheal_de_roiste@hotmail.com">Mine</a></em>
+        </h3>
+        <select name="selectedCountry" class="form-control-lg" (change)="onSelectCountry($event)">
+            <option value="">Select a Country</option>
+            <option *ngFor="let country of countries" [value]="country.id">{{country.name}}</option>
+        </select>
+    </div>
+    <div class="overlay"></div>
+</section>
