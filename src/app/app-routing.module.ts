@@ -6,15 +6,19 @@ import {AboutComponent} from './about/about.component';
 import {DestinationsComponent} from './destinations/destinations.component';
 import {NewsComponent} from './news/news.component';
 import {HomeComponent} from './home/home.component';
+import {DetailsComponent} from './news/details/details.component';
+import {UnknownPageComponent} from './unknown-page/unknown-page.component';
 
 const appRoutes: Routes = [
-
-    {'path': 'overview/:id', component: OverviewComponent},
-    {'path': 'news', component: NewsComponent},
+    {'path': '', component: HomeComponent},
+    {'path': 'overview', component: OverviewComponent},
+    {'path': 'news', component: DetailsComponent},
     {'path': 'destinations', component: DestinationsComponent},
     {'path': 'about', component: AboutComponent},
     {'path': 'language', component: PhrasesComponent},
-    {'path': '', component: HomeComponent}
+    {'path': 'unknown-path', component: UnknownPageComponent},
+    {'path': '**', redirectTo: 'unknown-path'},
+
 ];
 
 @NgModule({

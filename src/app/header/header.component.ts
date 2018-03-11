@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Country} from '../country.model';
+import {CountryService} from '../country.service';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+    country: Country;
 
-  constructor() { }
+    constructor(private countryService: CountryService) {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+
+        this.country = this.countryService.getCurrentCountry();
+        console.log(this.country);
+    }
 
 }

@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Please note, you will need to create a service, called api-keys.service.ts, this should take the following format: 
+export class ApiKeysService {
+    keys: Array<Object> = [
+        {category: 'news', key: ''},
+        {category: 'phrases', key: ''},
+        {category: 'about', key: ''},
+        {category: 'destinations', key: ''}
+    ];
+}
+You will need to setup: 
+newsapi.org,
+google api,
+... developer keys.

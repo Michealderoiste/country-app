@@ -1,8 +1,11 @@
 import {Injectable} from '@angular/core';
 import {Country} from './country.model';
+import {BehaviorSubject} from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class CountryService {
+    private messageSource = new BehaviorSubject<number>(1);
+    currentCountry = this.messageSource.asObservable();
     returned: Country;
     private countries: Country[] = [
         new Country(1, 'Italy', 'IT'),
@@ -33,11 +36,24 @@ export class CountryService {
         return this.returned;
     }
 
+    getCurrentCountry() {
+
+        this.returned = this.countries.find(c => c.id === +this.messageSource.value);
+        console.log(this.messageSource.value);
+        console.log(this.returned);
+        return this.returned;
+    }
+
     getCountries() {
         return this.countries.sort(function (a, b) {
             const x = a.name.toLowerCase();
             const y = b.name.toLowerCase();
             return x < y ? -1 : x > y ? 1 : 0;
         });
+    }
+
+    changeCountry(index: number) {
+        this.messageSource.next(index);
+
     }
 }

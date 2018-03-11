@@ -9,7 +9,7 @@
 
 .portfolio-item .caption {
     display: flex;
-    height: 100%;
+    height: 90%;
     width: 100%;
     background-color: rgba(33, 37, 41, 0.2);
     position: absolute;

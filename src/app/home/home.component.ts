@@ -10,7 +10,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 })
 export class HomeComponent implements OnInit {
     countries: Country[];
-
+    countryIndex: number;
 
     ngOnInit() {
         this.countries = this.countryService.getCountries();
@@ -21,7 +21,9 @@ export class HomeComponent implements OnInit {
     }
 
     onSelectCountry(event) {
-        this.router.navigate(['overview', event.target.value], {relativeTo: this.route});
+        this.countryIndex = event.target.value;
+        this.countryService.changeCountry(this.countryIndex);
+        this.router.navigate(['overview'], {relativeTo: this.route});
 
     }
 
