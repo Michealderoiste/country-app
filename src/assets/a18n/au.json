@@ -1,0 +1,13 @@
+{
+  "HELLO": "g'day {{value}}",
+  "PLEASE": "hello {{value}}",
+  "THANK YOU": "ta {{value}}",
+  "EXCUSE ME": "excuse me {{value}}",
+  "SPEAK": "speak {{value}}",
+  "WHERE IS": "where is {{value}}",
+  "HOW MUCH": "how much {{value}}",
+  "I WOULD LIKE": "I would like {{value}}",
+  "CHECK PLEASE": "cheque please {{value}}",
+  "HELP": "help {{value}}",
+  "CHEERS": "cheers {{value}}"
+}

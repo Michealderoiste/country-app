@@ -1,0 +1,13 @@
+{
+  "HELLO": "zdravo {{value}}",
+  "PLEASE": "molim {{value}}",
+  "THANK YOU": "hvala vam {{value}}",
+  "EXCUSE ME": "ispričajte me {{value}}",
+  "SPEAK": "govoriti {{value}}",
+  "WHERE IS": "gdje je {{value}}",
+  "HOW MUCH": "koliko {{value}}",
+  "I WOULD LIKE": "volio bih {{value}}",
+  "CHECK PLEASE": "racun molim {{value}}",
+  "HELP": "pomozite {{value}}",
+  "CHEERS": "živjeli {{value}}"
+}

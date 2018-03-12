@@ -1,0 +1,13 @@
+{
+  "HELLO": "xαίρετε {{value}}",
+  "PLEASE": "σας παρακαλούμε {{value}}",
+  "THANK YOU": "ευχαριστώ {{value}}",
+  "EXCUSE ME": "με συγχωρείτε {{value}}",
+  "SPEAK": "μιλώ {{value}}",
+  "WHERE IS": "που είναι {{value}}",
+  "HOW MUCH": "πόσο {{value}}",
+  "I WOULD LIKE": "θα ήθελα {{value}}",
+  "CHECK PLEASE": "ελέγξτε παρακαλώ {{value}}",
+  "HELP": "βοήθεια {{value}}",
+  "CHEERS": "Στην υγειά σας {{value}}"
+}

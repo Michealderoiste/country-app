@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Country} from '../country.model';
 import {CountryService} from '../country.service';
-import {TranslatorService} from '../translator.service';
+import {TranslateService} from '@ngx-translate/core';
+
 
 @Component({
     selector: 'app-phrases',
@@ -11,7 +12,9 @@ import {TranslatorService} from '../translator.service';
 export class PhrasesComponent implements OnInit {
     country: Country;
 
-    constructor(private countryService: CountryService, private translator: TranslatorService) {
+    constructor(private countryService: CountryService, private translate: TranslateService) {
+        translate.setDefaultLang('en');
+        translate.use('en');
     }
 
     ngOnInit() {

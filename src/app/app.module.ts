@@ -1,5 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {APP_ID, NgModule} from '@angular/core';
+import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {OverviewComponent} from './overview/overview.component';
 import {AppRoutingModule} from './app-routing.module';
@@ -15,8 +15,13 @@ import {DetailsComponent} from './news/details/details.component';
 import {UnknownPageComponent} from './unknown-page/unknown-page.component';
 import {ApiService} from './api.service';
 import {ApiKeysService} from './api-keys.service';
-import {TranslatorService} from './translator.service';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
 
+export function createTranslateLoader(http: HttpClient) {
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
     declarations: [
@@ -35,13 +40,19 @@ import {TranslatorService} from './translator.service';
         BrowserModule,
         AppRoutingModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            }
+        })
     ],
     providers: [
         CountryService,
         ApiService,
-        ApiKeysService,
-        TranslatorService
+        ApiKeysService
     ],
     bootstrap: [AppComponent]
 })

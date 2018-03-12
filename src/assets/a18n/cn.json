@@ -1,0 +1,13 @@
+{
+  "HELLO": "你好 {{value}}",
+  "PLEASE": "请 {{value}}",
+  "THANK YOU": "谢谢 {{value}}",
+  "EXCUSE ME": "打扰一下 {{value}}",
+  "SPEAK": "说话 {{value}}",
+  "WHERE IS": "哪里 {{value}}",
+  "HOW MUCH": "多少 {{value}}",
+  "I WOULD LIKE": "我想要 {{value}}",
+  "CHECK PLEASE": "请检查 {{value}}",
+  "HELP": "帮帮我 {{value}}",
+  "CHEERS": "干杯 {{value}}"
+}

@@ -1,0 +1,13 @@
+{
+  "HELLO": "こんにちは {{value}}",
+  "PLEASE": "お願いします {{value}}",
+  "THANK YOU": "ありがとうございました {{value}}",
+  "EXCUSE ME": "すみません {{value}}",
+  "SPEAK": "話す {{value}}",
+  "WHERE IS": "どこに {{value}}",
+  "HOW MUCH": "いくら {{value}}",
+  "I WOULD LIKE": "をお願いします {{value}}",
+  "CHECK PLEASE": "確認してください {{value}}",
+  "HELP": "助けて {{value}}",
+  "CHEERS": "乾杯 {{value}}"
+}

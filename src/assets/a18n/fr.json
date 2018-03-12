@@ -1,0 +1,13 @@
+{
+  "HELLO": "bonjour {{value}}",
+  "PLEASE": "s'il vous plaît {{value}}",
+  "THANK YOU": "merci {{value}}",
+  "EXCUSE ME": "excusez-moi {{value}}",
+  "SPEAK": "parler {{value}}",
+  "WHERE IS": "où se trouve {{value}}",
+  "HOW MUCH": "combien {{value}}",
+  "I WOULD LIKE": "j'aimerais {{value}}",
+  "CHECK PLEASE": "vérifier s'il vous plaît {{value}}",
+  "HELP": "aidez-moi {{value}}",
+  "CHEERS": "à votre santé {{value}}"
+}

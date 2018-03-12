@@ -1,0 +1,13 @@
+{
+  "HELLO": "hallo {{value}}",
+  "PLEASE": "asseblief {{value}}",
+  "THANK YOU": "dankie {{value}}",
+  "EXCUSE ME": "verskoon my {{value}}",
+  "SPEAK": "praat {{value}}",
+  "WHERE IS": "waar is {{value}}",
+  "HOW MUCH": "hoeveel {{value}}",
+  "I WOULD LIKE": "Ek sou graag wou hê {{value}}",
+  "CHECK PLEASE": "kyk asseblief {{value}}",
+  "HELP": "aiuto {{value}}",
+  "CHEERS": "saluti {{value}}"
+}
