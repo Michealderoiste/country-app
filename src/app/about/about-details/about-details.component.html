@@ -1,0 +1,28 @@
+<div class="media-container-row">
+    <div class="mbr-text counter-container col-12 col-md-12 mbr-fonts-style display-12">
+        <div class="d-flex flex-column">
+            <div class="p-2"><p><strong>Name</strong>
+                - {{ countryDetails?.name }} / {{ countryDetails?.nativeName }} <img src="{{countryDetails?.flag}}"
+                                                                                     class="inner-flag img-responsive" alt="flag"
+                                                                                     title="country flag"/></p>
+            </div>
+            <div class="p-2"><p><strong>Region</strong>
+                - {{ countryDetails?.region }} </p>
+            </div>
+            <div class="p-2"><p><strong>Capital</strong>
+                - {{ countryDetails?.capital }} </p>
+            </div>
+            <div class="p-2"><p><strong>Currency</strong>
+                - {{ countryDetails?.currencies[0].name }} </p>
+            </div>
+            <div class="p-2"><p><strong>Languages</strong>
+                - {{ countryDetails?.languages[0].name }} </p>
+            </div>
+            <div class="p-2"><p><strong>Population</strong>
+                - {{ countryDetails?.population }} </p>
+            </div>
+            <div class="p-2"><p><strong>Timezone</strong>
+                - {{ countryDetails?.timezones }} </p>
+            </div>
+        </div>
+    </div>

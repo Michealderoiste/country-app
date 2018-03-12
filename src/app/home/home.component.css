@@ -13,7 +13,7 @@
 }
 
 .world h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
     padding: 0;
 }
@@ -26,8 +26,11 @@
         font-size: 5.5rem;
     }
 }
-.mat-input-element{
-    font-size: 1.25em;
-    background: rgba(255,255,255,0.95);
-    padding: 2pt;
+div.center-dropdown {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin:100px auto;
+    width:320px;
+
 }

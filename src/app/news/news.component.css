@@ -1,0 +1,13 @@
+.container{
+    margin-top:90px;
+    padding-top: 10px!important;
+    background: url("/../../assets/images/news.jpg");
+    background-size: contain;
+}
+body {
+    overflow: hidden;
+}
+.p-2 {
+    border-bottom: 1px solid #343a40;
+    color: azure;
+}

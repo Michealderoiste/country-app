@@ -11,13 +11,17 @@ import {PhrasesComponent} from './phrases/phrases.component';
 import {HomeComponent} from './home/home.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CountryService} from './country.service';
-import {DetailsComponent} from './news/details/details.component';
 import {UnknownPageComponent} from './unknown-page/unknown-page.component';
 import {ApiService} from './api.service';
 import {ApiKeysService} from './api-keys.service';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {PhrasesDetailsComponent} from './phrases/phrases-details/phrases-details.component';
+import {NewsDetailsComponent} from './news/news-details/news-details.component';
+import {AboutDetailsComponent} from './about/about-details/about-details.component';
+import { DestinationsDetailsComponent } from './destinations/destinations-details/destinations-details.component';
+import {ServerService} from './server.service';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -33,14 +37,18 @@ export function createTranslateLoader(http: HttpClient) {
         AboutComponent,
         PhrasesComponent,
         HomeComponent,
-        DetailsComponent,
-        UnknownPageComponent
+        UnknownPageComponent,
+        PhrasesDetailsComponent,
+        NewsDetailsComponent,
+        AboutDetailsComponent,
+        DestinationsDetailsComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         FormsModule,
         ReactiveFormsModule,
+        HttpClientModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
@@ -52,7 +60,8 @@ export function createTranslateLoader(http: HttpClient) {
     providers: [
         CountryService,
         ApiService,
-        ApiKeysService
+        ApiKeysService,
+        ServerService
     ],
     bootstrap: [AppComponent]
 })

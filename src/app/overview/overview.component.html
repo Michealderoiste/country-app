@@ -2,16 +2,48 @@
 <div class="container">
     <div class="row no-gutters">
         <div class="col-lg-6">
-           <app-about></app-about>
+            <a class="portfolio-item" routerLink="/about/details">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>About</h2>
+                  <p class="mb-0">A little bit of information about {{ country.name }}</p>
+                </span>
+              </span>
+                <img class="img-fluid" src="../../assets/images/about.jpg" title="about image" alt="">
+            </a>
         </div>
         <div class="col-lg-6">
-           <app-news></app-news>
+            <a class="portfolio-item" routerLink="/news/details">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>News</h2>
+                  <p class="mb-0">What's making the headlines in {{ country.name }}</p>
+                </span>
+              </span>
+                <img class="img-fluid" src="../../assets/images/news.jpg" alt="">
+            </a>
         </div>
         <div class="col-lg-6">
-            <app-destinations></app-destinations>
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Destinations</h2>
+                  <p class="mb-0">Where are the popular destinations for travellers within {{ country.name }}</p>
+                </span>
+              </span>
+                <img class="img-fluid" src="../../assets/images/destinations.jpg" alt="">
+            </a>
         </div>
         <div class="col-lg-6">
-           <app-phrases></app-phrases>
+            <a class="portfolio-item" routerLink="/language/details">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Common Phrases</h2>
+                  <p class="mb-0">A little phrasebook to get you going!</p>
+                </span>
+              </span>
+                <img class="img-fluid" src="../../assets/images/phrases.jpg" alt="">
+            </a>
         </div>
     </div>
 </div>
