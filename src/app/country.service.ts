@@ -35,6 +35,7 @@ export class CountryService {
         this.returned = this.countries.find(c => c.id === +id);
         return this.returned;
     }
+
     getCountryByName(name: string) {
         this.returned = this.countries.find(c => c.name === name);
         if (typeof(this.returned) === 'undefined') {
@@ -42,6 +43,7 @@ export class CountryService {
         }
         else {
             this.changeCountry(this.returned.id);
+            return true;
         }
 
     }

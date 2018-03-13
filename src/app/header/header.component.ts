@@ -32,8 +32,7 @@ export class HeaderComponent implements OnInit {
         console.log('HELLO');
         console.log(this.searchForm);
         if (this.searchForm.value.search !== '') {
-            if (!this.countryService.getCountryByName(this.searchForm.value.search)) {
-                console.log("called");
+            if (this.countryService.getCountryByName(this.searchForm.value.search)=== false) {
                 this.flashMessagesService.show('Sorry, we cannot find any information on ' + this.searchForm.value.search, {
                     cssClass: 'alert-danger',
                     timeout: 99000
