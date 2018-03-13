@@ -1,6 +1,8 @@
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {Country} from './country.model';
+import 'rxjs/add/operator/catch';
+import {Observable} from 'rxjs/Observable';
 
 @Injectable()
 export class ServerService {
@@ -9,6 +11,8 @@ export class ServerService {
     }
 
     getCountryAbout(code: string) {
-        return this.http.get('https://restcountries.eu/rest/v2/alpha/' + code);
+        return this.http.get('https://restcountries.eu/rest/v2/alpha/' + code).catch((error: Response) => {
+            return Observable.throw('Something went wrong with API Call');
+        });
     }
 }

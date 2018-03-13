@@ -29,3 +29,10 @@ h6 {
 .container {
     padding-top: 70px;
 }
+.flash-messages
+{
+    z-index: 10000;
+    position: relative;
+    padding-top:45px;
+
+}

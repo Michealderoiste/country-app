@@ -17,7 +17,9 @@ export class OverviewComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.country = this.countryService.getCurrentCountry();
+        this.countryService.currentCountry.subscribe((country) => {
+            this.country = this.countryService.getCurrentCountry();
+        });
     }
 
 }

@@ -35,12 +35,20 @@ export class CountryService {
         this.returned = this.countries.find(c => c.id === +id);
         return this.returned;
     }
+    getCountryByName(name: string) {
+        this.returned = this.countries.find(c => c.name === name);
+        if (typeof(this.returned) === 'undefined') {
+            return false;
+        }
+        else {
+            this.changeCountry(this.returned.id);
+        }
+
+    }
 
     getCurrentCountry() {
 
         this.returned = this.countries.find(c => c.id === +this.messageSource.value);
-        console.log(this.messageSource.value);
-        console.log(this.returned);
         return this.returned;
     }
 

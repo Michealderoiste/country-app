@@ -22,6 +22,7 @@ import {NewsDetailsComponent} from './news/news-details/news-details.component';
 import {AboutDetailsComponent} from './about/about-details/about-details.component';
 import { DestinationsDetailsComponent } from './destinations/destinations-details/destinations-details.component';
 import {ServerService} from './server.service';
+import {FlashMessagesModule} from 'angular2-flash-messages';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -49,6 +50,7 @@ export function createTranslateLoader(http: HttpClient) {
         FormsModule,
         ReactiveFormsModule,
         HttpClientModule,
+        FlashMessagesModule.forRoot(),
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
